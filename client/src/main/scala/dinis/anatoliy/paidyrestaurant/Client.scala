@@ -23,7 +23,6 @@ import scala.concurrent.ExecutionContext.Implicits.global
 // if no arguments passed in.
 object ClientPostExample extends IOApp with Http4sClientDsl[IO] {
   def run(args: List[String]): IO[ExitCode] = {
-    println(args(0))
     val body = if (args.size >= 1) args(0) else s"""[{"table": "1", "name": "Pizza"}]"""
     val req = POST(body, uri("http://localhost:8080/orders"))
     val responseBody = BlazeClientBuilder[IO](global).resource.use(_.expect[String](req))

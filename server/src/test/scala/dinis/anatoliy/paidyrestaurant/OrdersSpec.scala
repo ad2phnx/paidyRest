@@ -30,7 +30,7 @@ class OrdersSpec extends org.specs2.mutable.Specification {
 	  getEmptyOrderReturns404()
 	}
 	"get empty order returns empty list" >> {
-	  getEmptyOrderReturnsEmptyList()
+	  getEmptyOrderReturnsEmptyString()
 	}
 	"get order returns 200" >> {
 	  getOrderReturns200()
@@ -108,7 +108,7 @@ class OrdersSpec extends org.specs2.mutable.Specification {
   private[this] def getEmptyOrderReturns404(): MatchResult[Status] =
 	retGetEmptyOrder.status must beEqualTo(Status.NotFound)
 
-  private[this] def getEmptyOrderReturnsEmptyList(): MatchResult[String] =
+  private[this] def getEmptyOrderReturnsEmptyString(): MatchResult[String] =
 	retGetEmptyOrder.as[String].unsafeRunSync() must beMatching("")
   
   private[this] def getOrderReturns200(): MatchResult[Status] =
