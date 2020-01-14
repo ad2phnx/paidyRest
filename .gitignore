@@ -1,0 +1,16 @@
+# sbt
+bin/
+project/
+target/
+build/
+
+# other?
+.history
+.scala_dependencies
+.cache
+.cache-main
+.metals
+
+# general
+*.class
+

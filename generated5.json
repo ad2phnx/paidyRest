@@ -1,0 +1,86 @@
+[
+  {
+    "table": "t65",
+    "name": "hamburger"
+  },
+  {
+    "table": "t40",
+    "name": "pizza"
+  },
+  {
+    "table": "t1",
+    "name": "barbecue_ribs"
+  },
+  {
+    "table": "t79",
+    "name": "buffalo_wings"
+  },
+  {
+    "table": "t71",
+    "name": "apple_pie"
+  },
+  {
+    "table": "t29",
+    "name": "key_lime_pie"
+  },
+  {
+    "table": "t37",
+    "name": "tater_tots"
+  },
+  {
+    "table": "t48",
+    "name": "philly_cheese_steak"
+  },
+  {
+    "table": "t29",
+    "name": "buffalo_wings"
+  },
+  {
+    "table": "t26",
+    "name": "nachos"
+  },
+  {
+    "table": "t77",
+    "name": "chips"
+  },
+  {
+    "table": "t27",
+    "name": "macaroni_and_cheese"
+  },
+  {
+    "table": "t14",
+    "name": "hamburger"
+  },
+  {
+    "table": "t26",
+    "name": "salmon"
+  },
+  {
+    "table": "t6",
+    "name": "chicken_fried_steak"
+  },
+  {
+    "table": "t22",
+    "name": "steak"
+  },
+  {
+    "table": "t35",
+    "name": "blueberry_pie"
+  },
+  {
+    "table": "t36",
+    "name": "pot_roast"
+  },
+  {
+    "table": "t85",
+    "name": "pot_roast"
+  },
+  {
+    "table": "t61",
+    "name": "buffalo_wings"
+  },
+  {
+    "table": "t26",
+    "name": "spaghetti"
+  }
+]
