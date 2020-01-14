@@ -3,6 +3,7 @@ package dinis.anatoliy.paidyrestaurant
 import cats.effect.Sync
 import fs2.Stream
 
+// Stream Utils helper functions taken from http4s examles github repository
 trait StreamUtils[F[_]] {
   def evalF[A](thunk: => A)(implicit F: Sync[F]): Stream[F, A] = Stream.eval(F.delay(thunk))
   def putStrLn(value: String)(implicit F: Sync[F]): Stream[F, Unit] = evalF(println(value))

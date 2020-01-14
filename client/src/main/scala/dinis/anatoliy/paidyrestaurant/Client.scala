@@ -18,6 +18,9 @@ import org.http4s.Uri.uri
 import io.circe._
 import scala.concurrent.ExecutionContext.Implicits.global
 
+// Main client class, either takes in a string representing an array of json order objects
+// like so: [{table: tableName, name: dishName}, ...] or creates one order of pizza on table 1
+// if no arguments passed in.
 object ClientPostExample extends IOApp with Http4sClientDsl[IO] {
   def run(args: List[String]): IO[ExitCode] = {
     println(args(0))
